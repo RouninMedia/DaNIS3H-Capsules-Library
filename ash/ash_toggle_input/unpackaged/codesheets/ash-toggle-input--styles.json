@@ -1,0 +1,176 @@
+[
+  {
+    "Selectors": [
+
+      ""
+    ],
+
+    "Styles": {
+
+      "opacity": "1",
+      "pointer-events": "auto"
+    }
+  },
+
+  {
+    "Selectors": [
+
+      ".checkboxToggle"
+    ],
+
+    "Styles": {
+
+      "--toggle-width": "60px",
+
+      "--toggle-height": "34px",
+
+      "--toggle-padding": "1px",
+
+      "--switch-height": "calc(var(--toggle-height) - (var(--toggle-padding) * 4))",
+
+      "--switch-slide": "calc(var(--toggle-width) - var(--switch-height) - (var(--toggle-padding) * 4) + 3px)"
+    }
+  },
+
+  {
+    "Selectors": [
+
+      ".checkboxToggle input[type=\"checkbox\"]"
+    ],
+
+    "Styles": {
+
+      "display": "none"
+    }
+  },
+
+  {
+    "Selectors": [
+
+      ".checkboxToggle",
+
+      ".checkboxToggleSwitch"
+    ],
+
+    "Styles": {
+
+      "position": "relative",
+
+      "display": "flex",
+
+      "align-items": "center",
+
+      "width": "var(--toggle-width)",
+
+      "height": "var(--toggle-height)"
+    }
+  },
+
+  {
+    "Selectors": [
+
+      ".checkboxToggleSwitch"
+    ],
+
+    "Styles": {
+
+      "height": "var(--switch-height)",
+
+      "background-color": "#ccc",
+
+      "border-radius": "var(--toggle-height)",
+
+      "cursor": "pointer",
+
+      "border": "1px solid rgba(0, 0, 0, 0.1)",
+
+      "box-shadow": "0 0 2px rgba(191, 191, 191, 1)",
+
+      "transition": "all 0.4s ease-out"
+    }
+  },
+
+  {
+    "Selectors": [
+
+      ".checkboxToggleSwitch:hover"
+    ],
+
+    "Styles": {
+
+      "border": "1px solid rgba(191, 0, 0, 0.5)",
+
+      "box-shadow": "0 0 2px rgba(191, 0, 0, 0.5)"
+    }
+  },
+
+  {
+    "Selectors": [
+
+      ".checkboxToggleSwitch::before"
+    ],
+
+    "Styles": {
+
+      "content": "''",
+
+      "width": "var(--switch-height)",
+
+      "height": "var(--switch-height)",
+
+      "margin-left": "0",
+
+      "background-color": "rgb(255, 255, 255)",
+
+      "border": "2px solid rgba(0, 0, 0, 0.3)",
+
+      "border-radius": "50%",
+
+      "box-sizing": "border-box",
+
+      "transition": "all 0.4s ease-out"
+    }
+  },
+
+  {
+    "Selectors": [
+
+      ".checkboxToggleSwitch:hover::before"
+    ],
+
+    "Styles": {
+
+      "border": "2px solid rgba(191, 0, 0, 0.5)"
+    }
+  },
+
+  {
+    "Selectors": [
+
+      ".checkboxToggle input[type=\"checkbox\"]:checked + .checkboxToggleSwitch"
+    ],
+
+    "Styles": {
+
+      "background-color": "rgb(255, 0, 0)",
+
+      "border": "1px solid rgba(229, 0, 0, 1)",
+
+      "box-shadow": "0 0 2px rgba(191, 0, 0, 1)"
+    }
+  },
+
+  {
+    "Selectors": [
+
+      ".checkboxToggle input[type=\"checkbox\"]:checked + .checkboxToggleSwitch::before"
+    ],
+
+    "Styles": {
+
+      "transform": "translateX(var(--switch-slide))",
+
+      "border": "2px solid rgba(229, 0, 0, 1)"
+    }
+  }
+]

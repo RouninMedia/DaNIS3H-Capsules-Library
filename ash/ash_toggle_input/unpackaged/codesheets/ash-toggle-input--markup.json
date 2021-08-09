@@ -1,0 +1,35 @@
+[
+  {
+    "element": "label",
+
+    "classList": [
+
+      "checkboxToggle"
+    ],
+
+    "elementChildren": [
+
+      {
+        "element": "input",
+
+        "attributes": {
+
+          "type": "checkbox"
+        },
+
+        "self-closing": true
+      },
+
+      {
+        "element": "span",
+
+        "classList": [
+
+          "checkboxToggleSwitch"
+        ],
+
+        "elementChildren": []
+      }
+    ]
+  }
+]
